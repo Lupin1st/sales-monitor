@@ -1,4 +1,4 @@
-name: .NET Core
+name: CI
 
 on:
   push:
@@ -23,3 +23,16 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: Build Container
+      run: docker build ./ -t salesmonitor.azurecr.io/sales-monitor  
+    - name: Docker Login
+      uses: Azure/docker-login@v1
+      with:
+        username: salesmonitor
+        password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
+        login-server: salesmonitor.azurecr.io
+    - name: Image ls
+      run: docker image ls
+    - name: Push image
+      run: docker push salesmonitor.azurecr.io/sales-monitor
+    
