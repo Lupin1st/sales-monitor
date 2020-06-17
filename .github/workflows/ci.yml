@@ -31,8 +31,6 @@ jobs:
         username: salesmonitor
         password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
         login-server: salesmonitor.azurecr.io
-    - name: Image ls
-      run: docker image ls
     - name: Push image
       run: docker push salesmonitor.azurecr.io/sales-monitor
     
