@@ -28,7 +28,7 @@ The selected repository will be filled with sample data for the last 30 days on 
 This project uses GitHub actions to create a docker image and hosts it inside an Azure AppService (Linux).
 The hosted version of this API uses CosmosDb as its repository.
 
-![.NET Core](https://github.com/Lupin1st/sales-monitor/workflows/.NET%20Core/badge.svg)
+![CI](https://github.com/Lupin1st/sales-monitor/workflows/CI/badge.svg)
 
 You can find the hosted version of this API at:
 https://sales-monitor.azurewebsites.net
