@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesMonitor.Api", "SalesMonitor.Api\SalesMonitor.Api.csproj", "{0145C1E6-2DAD-4E82-9188-3F92DCEA8B1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesMonitor.Api.Test", "SalesMonitor.Api.Test\SalesMonitor.Api.Test.csproj", "{35F851C3-7906-468A-ABBB-303DCB5B39C6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesMonitor.Api.IntegrationTest", "SalesMonitor.Api.IntegrationTest\SalesMonitor.Api.IntegrationTest.csproj", "{987D1EDA-F441-41B9-8593-DCE8693E99D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_solution", "_solution", "{A35419AB-8D06-490B-AD63-D2E026E9175A}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0145C1E6-2DAD-4E82-9188-3F92DCEA8B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0145C1E6-2DAD-4E82-9188-3F92DCEA8B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0145C1E6-2DAD-4E82-9188-3F92DCEA8B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0145C1E6-2DAD-4E82-9188-3F92DCEA8B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F851C3-7906-468A-ABBB-303DCB5B39C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F851C3-7906-468A-ABBB-303DCB5B39C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F851C3-7906-468A-ABBB-303DCB5B39C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F851C3-7906-468A-ABBB-303DCB5B39C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987D1EDA-F441-41B9-8593-DCE8693E99D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987D1EDA-F441-41B9-8593-DCE8693E99D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987D1EDA-F441-41B9-8593-DCE8693E99D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987D1EDA-F441-41B9-8593-DCE8693E99D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE69F08D-1118-460D-B6F7-6C6B1971BD1F}
+	EndGlobalSection
+EndGlobal
